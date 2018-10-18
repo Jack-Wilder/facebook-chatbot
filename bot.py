@@ -8,7 +8,7 @@ class Jarvis(Client):
         self.CLIENT_ACCESS_TOKEN = "your-access-token"
         self.ai = apiai.ApiAI(self.CLIENT_ACCESS_TOKEN)
         self.request = self.ai.text_request()
-        self.request.lang = 'de' #Default : English
+        self.request.lang = 'de'
         self.request.session_id = "<SESSION ID, UNIQUE FOR EACH USER>"
         
     def onMessage(self, author_id=None, message_object=None, thread_id=None, thread_type=ThreadType.USER, **kwargs):
